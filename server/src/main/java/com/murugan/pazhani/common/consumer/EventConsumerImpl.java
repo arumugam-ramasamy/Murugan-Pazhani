@@ -1,7 +1,7 @@
-package com.murugan.pazhani.consumer;
+package com.murugan.pazhani.common.consumer;
 
-import com.murugan.pazhani.Event;
-import com.murugan.pazhani.EventConsumer;
+import com.murugan.pazhani.common.Event;
+import com.murugan.pazhani.common.EventConsumer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +34,7 @@ public class EventConsumerImpl implements EventConsumer {
             logger.info("{} -> start processing", event.id());
             waiting.put(event.id(), true);
             try {
-                Thread.sleep(random.nextLong(2000, 10000));
+                Thread.sleep(random.nextInt(10000));
             } catch (InterruptedException e) {
             }
             waiting.remove(event.id());

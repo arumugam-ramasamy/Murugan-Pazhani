@@ -1,16 +1,13 @@
-package com.murugan.pazhani.producer;
+package com.murugan.pazhani.common.producer;
 
-import com.murugan.pazhani.Event;
-import com.murugan.pazhani.consumer.EventConsumerImpl;
+import com.murugan.pazhani.common.Event;
+import com.murugan.pazhani.common.consumer.EventConsumerImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import java.util.Random;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @Component
 public class EventProducer {
@@ -31,8 +28,8 @@ public class EventProducer {
         long now = System.currentTimeMillis();
 
         comsumer.consume(new Event(now,
-                eventTypes[eventTypeGen.nextInt(0,3)],
-                ticker[tickerGen.nextInt(0, ticker.length)],
+                eventTypes[eventTypeGen.nextInt(3)],
+                ticker[tickerGen.nextInt(ticker.length)],
                 ++counter, "do something"));
     }
 }

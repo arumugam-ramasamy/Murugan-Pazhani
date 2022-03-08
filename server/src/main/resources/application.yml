@@ -3,4 +3,3 @@ taskExecutor:
   maxPoolSize: 10
   queueCapacity: 50
 
-

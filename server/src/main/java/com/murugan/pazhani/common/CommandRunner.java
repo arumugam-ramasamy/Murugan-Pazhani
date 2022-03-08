@@ -1,4 +1,4 @@
-package com.murugan.pazhani;
+package com.murugan.pazhani.common;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
