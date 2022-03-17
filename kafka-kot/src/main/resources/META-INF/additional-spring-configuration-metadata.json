@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "processor.taskExecutor.corePoolSize",
+      "type": "java.lang.String",
+      "description": "Description for processor.taskExecutor.corePoolSize."
+  }
+] }

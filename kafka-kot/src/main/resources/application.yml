@@ -1,0 +1,6 @@
+processor:
+  taskExecutor:
+    corePoolSize: 2
+    maxPoolSize: 10
+    queueCapacity: 50
+

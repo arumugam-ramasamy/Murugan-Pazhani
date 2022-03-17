@@ -19,7 +19,7 @@ public class AppConfig {
     private int corePoolSize;
     @Value("${taskExecutor.maxPoolSize}")
     private int maxPoolSize;
-    @Value("${taskExecutor.corePoolSize}")
+    @Value("${taskExecutor.queCapacity}")
     private int queueCapacity;
 
 
