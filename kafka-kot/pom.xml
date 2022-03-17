@@ -13,6 +13,7 @@
         <kotlin.version>1.6.10</kotlin.version>
         <maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
         <kafka.client.version>3.1.0</kafka.client.version>
+        <spring-boot.version>2.5.0</spring-boot.version>
     </properties>
     <dependencies>
         <dependency>
@@ -33,7 +34,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>2.5.0</version>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.kafka</groupId>
